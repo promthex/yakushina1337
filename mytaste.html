@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Мой музыкальный вкус</title>
+    <style>
+        body {
+            background-color: #ffd3e0; /* розовый фон */
+            color: #ff80bf; /* светло-розовый текст */
+            font-family: 'Comic Sans MS', sans-serif; /* милый шрифт */
+        }
+        h1 {
+            text-align: center;
+            color: #ff66b2;
+        }
+        form {
+            margin: 20px auto;
+            width: 50%;
+            padding: 20px;
+            background-color: #ffb3d9;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ff80bf;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #ff66b2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #ff3385;
+        }
+    </style>
+</head>
+<body>
+    <h1>Мой музыкальный вкус</h1>
+    <form>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="favorite_genre">Ваш любимый жанр музыки:</label>
+        <select id="favorite_genre" name="favorite_genre">
+            <option value="rock">Рок</option>
+            <option value="jazz">Джаз</option>
+            <option value="classical">Классика</option>
+            <option value="pop">Поп</option>
+            <option value="hiphop">Хип-хоп</option>
+            <option value="electronic">Электронная музыка</option>
+        </select>
+
+        <label for="favorite_artist">Ваш любимый артист или группа:</label>
+        <input type="text" id="favorite_artist" name="favorite_artist">
+
+        <label for="music_discovery">Как вы узнали о новых музыкальных жанрах?</label>
+        <input type="text" id="music_discovery" name="music_discovery">
+
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>

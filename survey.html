@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Опрос</title>
+    <style>
+        body {
+            background-color: #ffd3e0;
+            color: #ff80bf;
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #ff66b2;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #ffb3d9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label, input, select {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Анкета</h1>
+    <form>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="genre">Любимый жанр:</label>
+        <select id="genre" name="genre">
+            <option value="rock">Рок</option>
+            <option value="jazz">Джаз</option>
+            <option value="pop">Поп</option>
+            <option value="hiphop">Хип-хоп</option>
+        </select>
+
+        <label for="comment">Комментарии:</label>
+        <textarea id="comment" name="comment"></textarea>
+
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
